@@ -1,0 +1,45 @@
+.projectItem {
+  display: flex;
+  align-items: center;
+  margin: 0 40px 80px 40px;
+  gap: 40px;
+
+  @media (max-width: 900px) {
+    flex-direction: column; // nhỏ hơn 900px thì xếp cột
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse; // project chẵn: ảnh bên trái, chữ bên phải
+  }
+
+  &:nth-child(odd) {
+    flex-direction: row; // project lẻ: ảnh bên phải, chữ bên trái
+  }
+}
+
+.projectText {
+  max-width: 420px;
+  line-height: 1.7;
+
+  h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    opacity: 0.8;
+  }
+}
+
+.projectImgBox {
+  width: 480px;
+  height: 280px;
+  background: linear-gradient(135deg, #444, #222);
+  border-radius: 16px;
+  flex-shrink: 0;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    height: 220px;
+  }
+}
