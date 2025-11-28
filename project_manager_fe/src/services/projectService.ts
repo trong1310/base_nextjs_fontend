@@ -7,4 +7,9 @@ export const projectService = {
       request
     );
   },
+  detailProject(uuid: string) {
+    return axios.get(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/v1/projects/${uuid}`
+    );
+  }
 };

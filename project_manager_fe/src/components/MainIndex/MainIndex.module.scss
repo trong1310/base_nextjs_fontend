@@ -1,19 +1,33 @@
 /* ===== GLOBAL ===== */
-
-.container {
-  font-family: "Inter", sans-serif;
-  color: #eaeaea;
-  background: #0f0f0f;
-  padding: 0 140px;
-  overflow-x: hidden;
-
-  @media (max-width: 1024px) {
+.container_main{
+  background: rgb(29, 29, 29);
+    @media (max-width: 1000px) {
     padding: 0 40px;
+    
   }
 
   @media (max-width: 600px) {
     padding: 0 20px;
   }
+}
+.container {
+  font-family: "Inter", sans-serif;
+  color: #eaeaea;
+  background: linear-gradient(135deg, #0f0000, #3d0b6d);
+  // padding: 0 140px;
+  overflow-x: hidden;
+  max-width: 60%;
+  margin: 0 auto;
+  @media (max-width: 1000px) {
+    padding: 0 40px;
+    
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 20px;
+  }
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 /* ===== HEADER ===== */
@@ -23,12 +37,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: linear-gradient(135deg, #412727, #3b3131);
+  width: 100%;
+  padding: 0 150px;
+  border-radius: 5px;
+  border-bottom: 1px solid #000;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
-  background: #fff;
+  padding: 20px 0 5px 0;
+  width: 200px;
+  height: 200px;
   color: #000;
   font-weight: 700;
   font-size: 24px;
@@ -44,7 +63,7 @@
 
   a {
     color: #bbb;
-    font-size: 16px;
+    font-size: 21px;
     transition: 0.25s;
 
     &:hover {
@@ -57,18 +76,23 @@
 
 .hero {
   text-align: center;
-  padding: 100px 0;
+  display: flex;
+  margin: 50px 150px;
 }
-
+.avatarBox {
+  width: 300px;
+  height: 300px;
+  margin: auto 20px
+}
 .avatar {
-  width: 160px;
-  height: 160px;
   border-radius: 999px;
   object-fit: cover;
-  margin-bottom: 20px;
   border: 3px solid #ffffff15;
 }
 
+.intro {
+  margin: auto 20px;
+}
 .subTitle {
   font-size: 20px;
   opacity: 0.8;
