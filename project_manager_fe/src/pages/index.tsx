@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <Fragment>
       <Head>
-        <title>Title</title>
+        <title>Project</title>
       </Head>
 <MainIndex/>
     </Fragment>

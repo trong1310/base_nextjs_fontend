@@ -32,7 +32,7 @@ function AppProvider({
         />
         <SplashScreen />
         <UpdateRouter />
-        <ToastContainer autoClose={3000} />
+        <ToastContainer autoClose={3001} />
         {children}
       </QueryClientProvider>
     </Provider>

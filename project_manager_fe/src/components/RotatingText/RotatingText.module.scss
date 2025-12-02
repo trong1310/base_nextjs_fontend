@@ -1,0 +1,15 @@
+.subTitle {
+  font-size: 18px;
+  font-weight: 700;
+  white-space: pre;
+}
+
+.cursor {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.cursorHidden {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
